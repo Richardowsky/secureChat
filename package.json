@@ -1,42 +1,28 @@
 {
-  "name": "chat",
+  "name": "chat2",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "description": "chat",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "source .env; ./node_modules/.bin/nodemon --watch src --exec babel-node -- src/server/index.js",
-    "client": "source .env; ./node_modules/.bin/nodemon --watch src --exec babel-node -- src/client/client.js sam",
-    "ted": "source .env; ./node_modules/.bin/nodemon --watch src --exec babel-node -- src/client/client.js ted"
+    "server": "source .env; ./node_modules/.bin/nodemon --watch src --exec babel-node -- src/server/index.js",
+    "alice": "source .env; ./node_modules/.bin/nodemon --watch src --exec babel-node -- src/client/index.js alice",
+    "bob": "source .env; ./node_modules/.bin/nodemon --watch src --exec babel-node -- src/client/index.js bob"
   },
-  "keywords": [],
-  "author": "",
+  "author": "lusenko",
   "license": "ISC",
   "dependencies": {
-    "cryptico-js": "^1.1.0",
-    "redux": "^4.0.4",
-    "repl": "^0.1.3",
-    "socket.io": "^2.3.0",
-    "body-parser": "latest",
-    "socket.io-client": "^2.3.0"
-  },
-  "devDependencies": {
     "nodemon": "^1.19.4",
+    "node-forge": "^0.9.1",
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
-    "chalk": "^3.0.0"
+    "redux": "latest",
+    "repl": "^0.1.3",
+    "socket.io-client": "latest",
+    "chalk": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Richardowsky/secureChat.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Richardowsky/secureChat/issues"
-  },
-  "homepage": "https://github.com/Richardowsky/secureChat#readme",
-  "description": ""
+  "devDependencies": {
+    "socket.io": "^2.3.0"
+  }
 }
