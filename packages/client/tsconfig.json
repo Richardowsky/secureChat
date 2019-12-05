@@ -1,0 +1,10 @@
+{
+  "files": [
+    "src/*.ts",
+    "src/state-management/**/*.ts"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5"
+  }
+}
